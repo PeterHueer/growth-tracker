@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavItem from "../components/NavItem";
 import Hero from "../components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <nav className="flex flex-row text-white">
         <div className="mx-auto flex w-full flex-wrap items-center justify-between">
           <a href="#" className="flex items-center">
-            <img src="/images/logo.png" className="mr-3 h-6 sm:h-9" />
+            <Image width={147} height={40} src="/images/logo.png" />
           </a>
           <div className="flex space-x-8 uppercase">
             <NavItem link="#" highlightedText="My" text="growth" />
