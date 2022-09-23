@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.11",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "*"
   },
   "devDependencies": {
-    "@types/node": "^18.7.14",
-    "@types/react": "^18.0.18",
+    "@types/node": "^18.7.18",
+    "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.0",
     "eslint-config-custom": "*",
