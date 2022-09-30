@@ -3,14 +3,9 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Image from "next/image";
 import NavItem from "../components/NavItem";
-import { useMemo } from "react";
 import Link from "next/link";
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  const componentMemo = useMemo(() => {
-    // @ts-ignore https://github.com/vercel/next.js/issues/35986
-    return <Component {...pageProps} />;
-  }, [Component, pageProps]);
   return (
     <div className="container mx-auto flex min-h-screen flex-col pt-5">
       <Head>
@@ -20,7 +15,10 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 
       <nav className="flex flex-row pb-5 text-white">
         <div className="mx-auto flex w-full flex-wrap items-center justify-between">
-          <Link href="/" className="flex items-center">
+          <Link
+            href="/Users/phuer/growth/projects/growth-tracker/apps/web/pages"
+            className="flex items-center"
+          >
             <Image width={147} height={40} src="/images/logo.png" alt="logo" />
           </Link>
           <div className="flex space-x-8 uppercase">
@@ -33,7 +31,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           </div>
         </div>
       </nav>
-      {componentMemo}
+      <Component {...pageProps} />
     </div>
   );
 }

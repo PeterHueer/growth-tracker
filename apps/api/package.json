@@ -1,0 +1,19 @@
+{
+  "name": "@growth-tracker/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Hueer",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.14"
+  }
+}

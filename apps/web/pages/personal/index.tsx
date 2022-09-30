@@ -1,8 +1,8 @@
 import React from "react";
 import Input from "../../components/Input";
-import { BeakerIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { PlusIcon } from "@heroicons/react/20/solid";
 
-export default function PersonalGrowthPage() {
+export default function PersonalGrowthPage({ countries }: any) {
   return (
     <div className="flex flex-col space-y-3 text-white">
       <h1 className="text-4xl">Forecast</h1>
